@@ -1,22 +1,24 @@
-import setuptools
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+from setuptools import setup, find_packages
 
-setuptools.setup(
+with open('README.md') as readme_file:
+    README = readme_file.read()
 
-     name='ezblockReal',  
-     version='0.1',
-     scripts=['modules.py'] ,
-     author="gpspelle",
-     author_email="gpsunicamp016@gmail.com",
-     description="Sunfounder utility block to use real components",
-     long_description=long_description,
-     long_description_content_type="text/markdown",
-     url="https://github.com/gpspelle/ezblock-real-modules/blob/master/modules.py",
-     packages=setuptools.find_packages(),
-     classifiers=[
-         "Programming Language :: Python :: 3",
-         "License :: OSI Approved :: MIT License",
-         "Operating System :: OS Independent",
-     ],
- )
+with open('HISTORY.md') as history_file:
+    HISTORY = history_file.read()
+
+setup_args = dict(
+    name='ezblockreal',
+    version='0.1.1',
+    description="Sunfounder utility block to use real components",
+    long_description_content_type="text/markdown",
+    long_description=README + '\n\n' + HISTORY,
+    license='MIT',
+    packages=find_packages(),
+    author="gpspelle",
+    author_email="gpsunicamp016@gmail.com",
+    keywords=['Raspberrypi', 'Sunfounder', 'Ezblock'],
+    url="https://github.com/gpspelle/ezblock-real-modules/"
+)
+
+if __name__ == '__main__':
+    setup(**setup_args)
