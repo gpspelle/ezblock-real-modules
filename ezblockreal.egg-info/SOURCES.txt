@@ -1,7 +1,7 @@
 README.md
 setup.py
-ezblock_real/__init__.py
-ezblock_real/modules.py
+ezblockreal/__init__.py
+ezblockreal/modules.py
 ezblockreal.egg-info/PKG-INFO
 ezblockreal.egg-info/SOURCES.txt
 ezblockreal.egg-info/dependency_links.txt
