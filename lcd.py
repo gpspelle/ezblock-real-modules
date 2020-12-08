@@ -4,7 +4,6 @@ class LCD1602:
     def __init__(self):
         self.lcd = i2clcd.i2clcd(i2c_bus=1, i2c_addr=0x27, lcd_width=16)
         self.lcd.init()
-        print(" [.] Created LCD1602", self.lcd)
 
     def write_line(self, line, data, align='LEFT'):
         self.lcd.print_line(data, line)
