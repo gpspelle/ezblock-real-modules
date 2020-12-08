@@ -8,7 +8,7 @@ with open('HISTORY.md') as history_file:
 
 setup_args = dict(
     name='ezblockreal',
-    version='0.1.2',
+    version='0.1.3',
     description="Sunfounder utility block to use real components",
     long_description_content_type="text/markdown",
     long_description=README + '\n\n' + HISTORY,
